@@ -69,6 +69,7 @@ class student
     string name;
     char stbno[6];
     int token;
+    
 public:
     void createstudent()
     {
@@ -147,6 +148,7 @@ void writebook()
 {
     char ch;
     fp.open("book.dat", ios::out|ios::app);
+    
     do
     {
         system("Cls");
@@ -162,6 +164,7 @@ void writestudent()
 {
     char ch;
     fp.open("student.dat", ios::out|ios::app);
+    
     do
     {
         system("Cls");
@@ -230,6 +233,7 @@ void modifybook()
     cout << "\nEnter the Book No.: ";
     cin >> n;
     fp.open("book.dat", ios::in|ios::out);
+    
     while(fp.read((char*)&bk, sizeof(book)) && found == 0)       //it will read first book and the pointer will move on to the next book
     {
         if(strcmpi(bk.retbno(),n) == 0)
@@ -258,12 +262,11 @@ void modifystudent()
     char n[6];
     int found = 0;
     system("Cls");
-
     cout << "\n\nMODIFY STUDENT RECORD...";
     cout << "\nEnter the Admission No.: ";
     cin >> n;
-
     fp.open("student.dat", ios::in|ios::out);
+    
     while(fp.read((char*)&st, sizeof(student)) && found == 0)       //it will read first student and the pointer will move on to the next student
     {
         if(strcmpi(st.retadmno(),n) == 0)
@@ -562,6 +565,7 @@ void administrator()
 {
     system("Cls");
     int x;
+    
     gotoxy(50, 4);
     cout << "\tADMINISTRATOR MENU";
     gotoxy(50, 6);
@@ -653,6 +657,7 @@ int main()
     do
     {
         system("Cls");
+        
         gotoxy(50, 7);
         cout << "MAIN MENU";
         gotoxy(50, 9);
@@ -692,4 +697,3 @@ int main()
         }
     }while(ch != 4);
 }
-
