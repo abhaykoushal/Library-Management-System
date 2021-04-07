@@ -8,8 +8,8 @@ This is a simple library management project developed to work on command line in
 ---------------------------
 * Add, delete, modify and view students' data.
 * Add, delete, modify and view books' data.
-* Issue books
-* Deposit books
+* Issue books.
+* Deposit books.
 
 ## Concepts used:
 ---------------------------
