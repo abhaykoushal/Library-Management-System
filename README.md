@@ -20,3 +20,16 @@ This is a simple library management project developed to work on command line in
 ## Compiler Used:
 --------------------------
 GNU GCC
+
+## Screenshots
+----------------------------
+**Home Screen**
+![](images/1.png)
+
+
+**Main Menu**
+![](images/2.png)
+
+
+**Administrator Menu**
+![](images/3.png)
